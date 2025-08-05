@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background-color: #ffedd3de;
+    z-index: 3;
+}
+
+#menuHamburguesa {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#abrir {
+    position: relative;
+    top: 0;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#cerrar {
+    position: relative;
+    top: 80px;
+    left: 0;
+    color: #FFEDD3;
+    display: inline-block;
+    z-index: 4;
+    padding: 20px;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: -2000px;
+    background-color: #333;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.4s ease;
+}
+
+#navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 3;
+    row-gap: 70px;
+    margin-top: 100px;
+}
+
+#navBar > li > a {
+    display: block;
+    color: #FFEDD3;
+    font-size: 1.5rem;
+}
+
+#menu:target {
+    left: 0;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#inicio {
+    padding-top: 300px;
+}
+
+#search {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+#search > input {
+    height: 33px;
+    color: #1a1a1a;
+    width: 60%;
+}
+
+#search > button {
+    background-color: #1a1a1a;
+}
+
+#buscar {
+    height: 30px;
+    all: unset;
+    padding: 3px;
+}
+
+body {
+    background-color: #FFEDD3;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 3rem;
+    color: #333;
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px;
+}
+
+.categorias {
+    width: clamp(300px, 30%, 400px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative
+}
+
+.linkCategoria {
+    display: block;
+    position: relative;
+}
+
+.linkCategoria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(70%);
+    transition: filter 0.3s ease;
+}
+
+.linkCategoria:hover img {
+    filter: brightness(50%);
+}
+
+.linkCategoria span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/*Quienes Somos*/
+
+#quienesSomos {
+    background-image: url(../imagenesIndex/quienesSomos.webp);
+    background-position-y: -500px;
+    width: 100%;
+    background-size: cover;
+    height: 1000px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#gradiante {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 50%);
+    z-index: 2;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+#textoQuienesSomos {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 50%);
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3.5rem;
+    row-gap: 20px;
+    text-align: center;
+}
+
+#textoQuienesSomos > h2, p {
+    width: clamp(300px, 30%, 400px);
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    letter-spacing: 1.3px;
+    color: #FFEDD3;
+    font-family: 'natural';
+}
+
+#textoQuienesSomos > p > .textoDestacado {
+    color: #5F7D41;
+}
+
+/*Contacto*/
+
+#contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contacto img {
+    width: 90%;
+    height: auto;
+}
+
+#textoContacto {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+#textoContacto > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    font-size: 3rem;
+    row-gap: 40px;
+    font-family: 'natural';
+}
+
+#textoContacto > div > p {
+    color: #333;
+    width: 80%;
+    letter-spacing: 2px;
+}
+
+#listaContacto {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 5rem;
+    font-family: 'natural';
+    font-size: 2rem;
+}
+
+#listaContacto > li > a {
+    color: #1a1a1a;
+}
+
+#listaContacto > li > a > svg {
+    width: 3rem;
+    height: auto;
+}
+
+#listaContacto > #ig > a > svg {
+    width: 3.7rem;
+    height: auto;
+}
+
+/*Ubicacion*/
+
+#ubicacion {
+    display: flex;
+}
+
+#ubicacion iframe {
+    width: 65rem;
+    height: 65rem;
+}
+
+#textoUbicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4rem;
+    font-family: 'natural';
+}
+
+#textoUbicacion > h2 {
+    font-size: 4rem;
+}
+
+#textoUbicacion > p {
+    color: #333;
+    width: 70%;
+}
+
+/* ADAPTAR A MOBILE */
+
+@media (min-width: 320px) and (max-width: 1570px) {
+
+    #cerrar {
+        top: 10px;
+    }
+
+    #logo > img {
+        width: 100px;
+        height: auto;
+    }
+
+    #inicio {
+        padding-top: 150px;
+    }
+
+    #quienesSomos {
+        background-position-x: center;
+        background-position-y: center;
+    }
+
+    #textoQuienesSomos {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0) 100%);
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 0;
+    }
+
+    #textoQuienesSomos > p {
+        margin-bottom: 30px;
+    }
+
+    .textoOculto {
+        display: none;
+    }
+
+    #contacto {
+        flex-direction: column;
+    }
+
+    #textoContacto {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        row-gap: 3rem;
+    }
+
+    #textoContacto > div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contacto > article > figure > img {
+        width: 100%;
+    }
+
+    #listaContacto {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #listaContacto > li > a > svg {
+        width: 4rem;
+        height: auto;
+    }
+    
+    #listaContacto > #ig > a > svg {
+        width: 4.7rem;
+        height: auto;
+    }
+    
+    #ubicacion {
+        flex-direction: column-reverse;
+    }
+    
+    #ubicacion iframe {
+        width: 100%;
+        height: 20rem;
+    }
+
+    #textoUbicacion {
+        text-align: center;
+    }
+
+    #textoUbicacion > h2 {
+        font-size: 3.5rem;
+    }
+}
