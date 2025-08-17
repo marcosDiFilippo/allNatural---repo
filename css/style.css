@@ -1,80 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    background-color: #ffedd3de;
-    z-index: 3;
-}
-
-#menuHamburguesa {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#abrir {
-    position: relative;
-    top: 0;
-    left: 20px;
-    z-index: 2;
-    cursor: pointer;
-}
-
-#cerrar {
-    position: relative;
-    top: 80px;
-    left: 0;
-    color: #FFEDD3;
-    display: inline-block;
-    z-index: 4;
-    padding: 20px;
-}
-
-#menu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    left: -2000px;
-    background-color: #333;
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    transition: left 0.4s ease;
-}
-
-#navBar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-    z-index: 3;
-    row-gap: 70px;
-    margin-top: 100px;
-}
-
-#navBar > li > a {
-    display: block;
-    color: #FFEDD3;
-    font-size: 1.5rem;
-}
-
-#menu:target {
-    left: 0;
-}
-
-#logo {
-    z-index: 1;
-}
-
 #inicio {
     padding-top: 300px;
 }
@@ -301,15 +224,6 @@ h1 {
 /* ADAPTAR A MOBILE */
 
 @media (min-width: 320px) and (max-width: 1570px) {
-
-    #cerrar {
-        top: 10px;
-    }
-
-    #logo > img {
-        width: 100px;
-        height: auto;
-    }
 
     #inicio {
         padding-top: 150px;
