@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'natural';
+    letter-spacing: 2.5px;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    row-gap: 40px;
+}
+
+body {
+    background-color: #FFEDD3;
+}
+
+fieldset {
+    border: 2px solid #e6cfb04b;
+}
+
+legend {
+    font-size: 2.7rem;
+    text-shadow: 1px 1px 2px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+#inputsLogin {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 80%;
+    background-color: #e6cfb04b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.boxInput {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.campoObligatorio {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
+
+#olvidoContrasenia {
+    text-decoration: none;
+    color: #3B82F6;
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease;
+}
+
+#olvidoContrasenia:hover {
+    font-size: 1.55rem;
+}
+
+#mail, #password {
+    height: 1.6rem;
+    background-color: #f2d1a8b7;
+    border: 0;
+    padding: 0.7rem;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    font-size: 1.1rem;
+}
+
+#cajaEnvio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+#crearCuenta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 3rem;
+    color: #d9a86c;
+    text-decoration: none;
+    border: 2px solid #d9a86c;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+#crearCuenta:hover {
+    color: #ce9754;
+    font-size: 1.2rem;
+}
+
+#enviar {
+    width: 50%;
+    height: 3.4rem;
+    border: 0;
+    background-color: #8b5718c4;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #FFEDD3;
+    transition: font-size 0.3s ease;
+}
+
+#enviar:hover {
+    font-size: 1.8rem;
+}
+
+@media (width >= 800px) {
+    #inputsLogin {
+        width: 750px;
+    }
+}
