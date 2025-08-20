@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: antiquewhite;
+}
+
+header svg {
+    width: 4rem;
+    height: auto;
+    margin-right: 10px;
+}
+
+nav {
+    background-color: #eed7b7b7;
+    height: 100%;
+    width: 20%;
+}
+
+#container {
+    display: flex;
+    background-color: #FFEDD3;
+}
+
+#listaSections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    list-style-type: none;  
+}
+
+#listaSections > li {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    column-gap: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#listaSections > li > a {
+    font-size: 3.5rem;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #333333;
+    padding: 3rem 0 3rem 0;
+    z-index: 2;
+}
+
+#listaSections li:hover {
+    background-color: #33333315;
+}
+
+#listaSections svg {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+}
+
+#products {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article h2 {
+    font-size: 3rem;
+}
+
+#articleListaProductos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#articleAddProduct {
+    width: 30%;
+}
